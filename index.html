@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Mathur - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">YM</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Animated Background Keywords -->
+        <div class="animated-keywords">
+            <!-- Keywords that start within viewport -->
+            <div class="keyword-line" style="top: 10%; font-size: 1.2rem; left: 20%;">JavaScript React Node.js Python TypeScript</div>
+            <div class="keyword-line" style="top: 20%; font-size: 0.9rem; left: 60%;">AWS Docker Kubernetes Microservices API</div>
+            <div class="keyword-line" style="top: 30%; font-size: 1.5rem; left: 10%;">Full-Stack Development Database MongoDB PostgreSQL</div>
+            <div class="keyword-line" style="top: 40%; font-size: 1.1rem; left: 70%;">Git GitHub CI/CD DevOps Agile Scrum</div>
+            <div class="keyword-line" style="top: 50%; font-size: 1.3rem; left: 30%;">HTML CSS Bootstrap Tailwind Responsive Design</div>
+            <div class="keyword-line" style="top: 60%; font-size: 0.8rem; left: 80%;">REST API GraphQL JWT Authentication OAuth</div>
+            <div class="keyword-line" style="top: 70%; font-size: 1.4rem; left: 15%;">Machine Learning AI Data Science TensorFlow</div>
+            <div class="keyword-line" style="top: 80%; font-size: 1.0rem; left: 65%;">Cloud Computing Serverless Lambda Functions</div>
+            <div class="keyword-line" style="top: 90%; font-size: 1.6rem; left: 25%;">Software Architecture Design Patterns SOLID</div>
+            <div class="keyword-line" style="top: 15%; font-size: 1.1rem; left: 75%;">Redux Context API State Management</div>
+            <div class="keyword-line" style="top: 25%; font-size: 1.3rem; left: 35%;">Express.js FastAPI Django Spring Boot</div>
+            <div class="keyword-line" style="top: 35%; font-size: 0.9rem; left: 85%;">Webpack Babel ESLint Prettier Testing</div>
+            <div class="keyword-line" style="top: 45%; font-size: 1.4rem; left: 5%;">RESTful APIs GraphQL WebSockets</div>
+            <div class="keyword-line" style="top: 55%; font-size: 1.0rem; left: 55%;">MongoDB Redis Elasticsearch PostgreSQL</div>
+            <div class="keyword-line" style="top: 65%; font-size: 1.2rem; left: 90%;">Docker Compose Kubernetes Helm</div>
+            <div class="keyword-line" style="top: 75%; font-size: 1.5rem; left: 40%;">AWS EC2 S3 Lambda CloudFormation</div>
+            <div class="keyword-line" style="top: 85%; font-size: 1.1rem; left: 20%;">Jenkins GitHub Actions CircleCI</div>
+            <div class="keyword-line" style="top: 95%; font-size: 1.3rem; left: 60%;">TDD BDD Unit Testing Integration Testing</div>
+            
+            <!-- Additional keywords for more coverage -->
+            <div class="keyword-line" style="top: 5%; font-size: 1.0rem;">Vue.js Angular Svelte Next.js Nuxt.js</div>
+            <div class="keyword-line" style="top: 12%; font-size: 1.3rem;">System Design Scalability Performance Optimization</div>
+            <div class="keyword-line" style="top: 18%; font-size: 1.1rem;">Blockchain Web3 Smart Contracts Ethereum</div>
+            <div class="keyword-line" style="top: 22%; font-size: 1.4rem;">Mobile Development React Native Flutter iOS Android</div>
+            <div class="keyword-line" style="top: 28%; font-size: 0.9rem;">Linux Unix Shell Scripting Bash PowerShell</div>
+            <div class="keyword-line" style="top: 32%; font-size: 1.2rem;">Data Structures Algorithms LeetCode HackerRank</div>
+            <div class="keyword-line" style="top: 38%; font-size: 1.5rem;">Big Data Hadoop Spark Kafka Data Engineering</div>
+            <div class="keyword-line" style="top: 42%; font-size: 1.0rem;">Security OWASP HTTPS SSL TLS Encryption</div>
+            <div class="keyword-line" style="top: 48%; font-size: 1.3rem;">UI/UX Design Figma Adobe XD Prototyping</div>
+            <div class="keyword-line" style="top: 52%; font-size: 1.1rem;">Agile Scrum Kanban Sprint Planning Retrospectives</div>
+            <div class="keyword-line" style="top: 58%; font-size: 1.4rem;">Code Review Pair Programming Technical Leadership</div>
+            <div class="keyword-line" style="top: 62%; font-size: 0.8rem;">Monitoring Logging ELK Stack Prometheus Grafana</div>
+            <div class="keyword-line" style="top: 68%; font-size: 1.2rem;">Serverless Functions AWS Lambda Azure Functions</div>
+            <div class="keyword-line" style="top: 72%; font-size: 1.5rem;">Microservices Architecture Event-Driven Design</div>
+            <div class="keyword-line" style="top: 78%; font-size: 1.0rem;">Version Control Git Flow Feature Branches</div>
+            <div class="keyword-line" style="top: 82%; font-size: 1.3rem;">Continuous Integration Deployment Pipeline</div>
+            <div class="keyword-line" style="top: 88%; font-size: 1.1rem;">Load Balancing Auto Scaling High Availability</div>
+            <div class="keyword-line" style="top: 92%; font-size: 1.4rem;">Database Design Normalization Indexing Query Optimization</div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="code-container">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="file-name">developer.js</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="code-text"><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            <span class="code-text indent">name: <span class="string">"Yash Mathur"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <span class="code-text indent">title: <span class="string">"Software Engineer & Full-Stack Developer"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            <span class="code-text indent">passion: <span class="string">"Creating innovative solutions"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            <span class="code-text indent">expertise: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"Python"</span>],</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            <span class="code-text indent">status: <span class="string">"Available for opportunities"</span></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">7</span>
+                            <span class="code-text">};</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">8</span>
+                            <span class="code-text"></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">9</span>
+                            <span class="code-text"><span class="comment">// Let's build something amazing together!</span></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">10</span>
+                            <span class="code-text"><span class="function">developer</span>.<span class="method">connect</span>();</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-terminal"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/mathur-14" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yash-mathur-70606a17a/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ym2977@nyu.edu" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="profile-pic.jpeg" alt="Yash Mathur Profile Picture" class="profile-pic" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <div class="intro-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Passionate Problem Solver</h3>
+                        <p>
+                            I'm a dedicated software engineer with a passion for creating efficient, scalable, and user-friendly applications. 
+                            My journey in technology has been driven by curiosity and a desire to solve complex problems through innovative solutions.
+                            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring fellow developers.
+                        </p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4>Full-Stack Expertise</h4>
+                            <p>From pixel-perfect UIs to robust backend systems, I build complete solutions that scale.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovation Focus</h4>
+                            <p>Always exploring cutting-edge technologies to deliver the best possible user experiences.</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Team Player</h4>
+                            <p>Thrive in collaborative environments, mentoring others and learning from diverse perspectives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>2+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>15+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>20+</h3>
+                                <p>Technologies</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3>∞</h3>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-quote">
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i>
+                            "The best code is not just functional, but also readable, maintainable, and scalable. 
+                            It's about creating solutions that not only work today but can evolve with tomorrow's needs."
+                            <i class="fas fa-quote-right"></i>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-visual">
+                        <div class="tech-stack">
+                            <div class="tech-item" style="--delay: 0s">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item" style="--delay: 0.2s">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item" style="--delay: 0.4s">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item" style="--delay: 0.6s">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="tech-item" style="--delay: 0.8s">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="tech-item" style="--delay: 1s">
+                                <i class="fab fa-github"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="timeline-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> Show All
+                </button>
+                <button class="filter-btn" data-filter="experience">
+                    <i class="fas fa-briefcase"></i> Work Experience
+                </button>
+                <button class="filter-btn" data-filter="education">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </button>
+            </div>
+            
+            <!-- Timeline Container -->
+            <div class="timeline-container">
+                <!-- Experience Section Header -->
+                <div class="section-subtitle" data-category="experience">
+                    <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+                </div>
+                
+                <div class="timeline">
+                <div class="timeline-item" data-category="experience">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Sonicbids</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                                <span class="duration"><i class="fas fa-calendar"></i> June 2025 - Present</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Leading end-to-end feature development for artist-venue booking platform with focus on AI-powered search and automation.</p>
+                            <ul>
+                                <li>Lead end-to-end feature development for artist-venue booking workflows using React/Node.js, cutting onboarding time by 30%</li>
+                                <li>Built semantic search for 100K+ artists/venues using OpenAI embeddings & Vector DB, improving match accuracy by 40%</li>
+                                <li>Implemented daily digest notifications (EventBridge/Lambda/Supabase/SES) for venue subscriptions, achieving 60% open rates</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">OpenAI</span>
+                                <span class="tech-tag">Vector DB</span>
+                                <span class="tech-tag">AWS Lambda</span>
+                                <span class="tech-tag">EventBridge</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">SES</span>
+                            </div>
+                            <div class="timeline-achievements">
+                                <span class="achievement-tag">30% Onboarding Improvement</span>
+                                <span class="achievement-tag">40% Search Accuracy</span>
+                                <span class="achievement-tag">60% Open Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="experience">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Business Analyst Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="company">MTA-NYCT</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                                <span class="duration"><i class="fas fa-calendar"></i> June 2024 - August 2024</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Built data analytics solutions and AI-powered contract analysis systems for transportation authority.</p>
+                            <ul>
+                                <li>Built a real-time analytics dashboard (Python/Dash) comparing traffic violation data from vendors, uncovering 15% discrepancy rates</li>
+                                <li>Engineered a RAG pipeline prototype (FastAPI + GPT4o + VectorDB) hosted on AWS EC2 for clause extraction and auto-summarizing vendor contracts, cutting retrieval time from minutes to seconds</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Dash</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">GPT4o</span>
+                                <span class="tech-tag">VectorDB</span>
+                                <span class="tech-tag">AWS EC2</span>
+                                <span class="tech-tag">RAG</span>
+                            </div>
+                            <div class="timeline-achievements">
+                                <span class="achievement-tag">15% Discrepancy Detection</span>
+                                <span class="achievement-tag">Minutes to Seconds</span>
+                                <span class="achievement-tag">AI Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="experience">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Cimpress</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                                <span class="duration"><i class="fas fa-calendar"></i> August 2021 - April 2023</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Owned shipping logistics features across 20+ microservices processing 10M+ annual shipments with focus on performance optimization and system reliability.</p>
+                            <ul>
+                                <li>Owned shipping logistics features across 20+ microservices (Node.js/Java/TypeScript) processing 10M+ annual shipments</li>
+                                <li>Led end-to-end integration of a Japanese carrier system, automating generation of shipping labels/documents with zero downtime</li>
+                                <li>Designed a transit-time microservice that cut query latency from 1.2s to 800ms, saving 200+ engineering hours/month</li>
+                                <li>Monitored backend microservice health using Sumo Logic and improved system reliability by debugging on-call incidents and reducing downtime by 25%</li>
+                                <li>Collaborated with DevOps to optimize Docker/K8s deployment pipelines, improving system boot-up time and scaling efficiency across cloud environments; led architecture upgrades and DevOps automation efforts, reducing system vulnerabilities by 40%</li>
+                                <li>Coordinated closely with 10+ software development teams and global customers spanning 5 time zones in an agile environment</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Sumo Logic</span>
+                                <span class="tech-tag">Microservices</span>
+                                <span class="tech-tag">DevOps</span>
+                            </div>
+                            <div class="timeline-achievements">
+                                <span class="achievement-tag">10M+ Shipments</span>
+                                <span class="achievement-tag">25% Downtime Reduction</span>
+                                <span class="achievement-tag">40% Vulnerability Reduction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-category="experience">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer Intern</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Surewaves MediaTech</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                                <span class="duration"><i class="fas fa-calendar"></i> January 2021 - July 2021</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Automated ad slot processing and built inventory management APIs for media technology platform.</p>
+                            <ul>
+                                <li>Automated Ad Slot Processing by eliminating manual Excel data entry through building a parser (ASP.NET) that ingests slot details into PostgreSQL, saving 15+ hours/week of operational work while reducing errors by 90%</li>
+                                <li>Designed inventory management Ad Platform APIs (ASP.NET/PostgreSQL), boosting slot allocation 25%</li>
+                            </ul>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">ASP.NET</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">API Development</span>
+                                <span class="tech-tag">Automation</span>
+                            </div>
+                            <div class="timeline-achievements">
+                                <span class="achievement-tag">90% Error Reduction</span>
+                                <span class="achievement-tag">15+ Hours Saved/Week</span>
+                                <span class="achievement-tag">25% Allocation Boost</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education Section Header -->
+            <div class="section-subtitle" data-category="education">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-category="education">
+                    <div class="timeline-marker education">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content education">
+                        <div class="timeline-header">
+                            <h3>Master of Science in Computer Science</h3>
+                            <div class="timeline-meta">
+                                <span class="institution">New York University</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                                <span class="duration"><i class="fas fa-calendar"></i> Sept 2023 - May 2025</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Comprehensive computer science education with focus on cloud computing, big data, and modern software engineering practices.</p>
+                            <ul>
+                                <li>Overall GPA: 3.9/4.0</li>
+                                <li>Relevant Coursework: Cloud Computing, Database Systems, Internet Security and Privacy, Big Data, Data Structures and Algorithms, Operating Systems</li>
+                                <li>Teaching Assistant and Course Assistant for Intro to Programming Languages (Aug 2024 - May 2025)</li>
+                            </ul>
+                            <div class="timeline-achievements">
+                                <span class="achievement-tag">3.9 GPA</span>
+                                <span class="achievement-tag">Teaching Assistant</span>
+                                <span class="achievement-tag">Course Assistant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-category="education">
+                    <div class="timeline-marker education">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content education">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Engineering in Computer Science</h3>
+                            <div class="timeline-meta">
+                                <span class="institution">Visvesvaraya Technological University</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</span>
+                                <span class="duration"><i class="fas fa-calendar"></i> Aug 2017 - Aug 2021</span>
+                            </div>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Strong foundation in computer science fundamentals with active involvement in technical communities and leadership roles.</p>
+                            <ul>
+                                <li>Overall GPA: 3.49/4.0</li>
+                                <li>Comprehensive coursework in computer science fundamentals, software engineering, and programming</li>
+                                <li>Campus Ambassador and Club Head of HackerEarth (Aug 2018 - Jul 2020)</li>
+                                <li>Active participation in technical communities and programming competitions</li>
+                            </ul>
+                            <div class="timeline-achievements">
+                                <span class="achievement-tag">3.49 GPA</span>
+                                <span class="achievement-tag">Campus Ambassador</span>
+                                <span class="achievement-tag">HackerEarth Club Head</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>NYU-TV Cloud Project (2024)</h3>
+                        <p>Deployed a cloud-based streaming platform for NYU, enhancing user experience with features like recorded event viewing and live event streaming; employed AWS services like Cognito, IVS, Lambda, OpenSearch, Rekognition for a serverless and scalable backend infrastructure.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AWS Services</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mathur-14/NYU-TV" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Home Energy Management Systems (2023)</h3>
+                        <p>Developed a web app, leveraging microservices architecture, enabling homeowners to monitor historical energy usage, manage devices, and analyze data for informed energy-saving decisions. Applied robust security measures, including authentication middleware and CORS for secure user interactions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mathur-14/Smart-Home-Energy-Management-System" target="_blank" class="project-link"><i class="fab fa-github"></i> Backend</a>
+                            <a href="https://github.com/mathur-14/shems-flutter" target="_blank" class="project-link"><i class="fab fa-github"></i> Frontend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Market Data Service</h3>
+                        <p>A comprehensive market data service providing real-time financial data and analytics for trading and investment applications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Real-time Data</span>
+                            <span class="tech-tag">Financial APIs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mathur-14/market-data-service" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Projects Section -->
+            <div class="other-projects">
+                <h3 class="section-subtitle">Other Projects</h3>
+                <div class="other-projects-grid">
+                    <a href="https://github.com/mathur-14/rent-raja" target="_blank" class="other-project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Rent Raja</span>
+                    </a>
+                    <a href="https://github.com/mathur-14/artsy" target="_blank" class="other-project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Artsy</span>
+                    </a>
+                    <a href="https://github.com/mathur-14/AQI-level-visualization" target="_blank" class="other-project-link">
+                        <i class="fab fa-github"></i>
+                        <span>AQI Level Visualization</span>
+                    </a>
+                    <a href="https://github.com/mathur-14/project-management-system" target="_blank" class="other-project-link">
+                        <i class="fab fa-github"></i>
+                        <span>Project Management System</span>
+                    </a>
+                    <a href="https://github.com/mathur-14/Generative-Adversarial-Networks-GANs-Text-to-Image-generation" target="_blank" class="other-project-link">
+                        <i class="fab fa-github"></i>
+                        <span>GANs Text-to-Image Generation</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>REST/GraphQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>Microservices</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS (Lambda, S3, EC2)</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-ship"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mountain"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>CI/CD (GitHub Actions)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>RAG</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vector-square"></i>
+                            <span>Vector Embeddings</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Prompt Engineering</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Semantic Search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>DynamoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Supabase (VectorDB)</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-stream"></i>
+                            <span>Kafka</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-memory"></i>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-bug"></i> Testing & Monitoring</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-vial"></i>
+                            <span>Mocha</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Chai</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>JUnit</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Prometheus</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-eye"></i>
+                            <span>New Relic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ym2977@nyu.edu">ym2977@nyu.edu</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/yash-mathur-70606a17a/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/mathur-14" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <!-- Honeypot field to prevent spam -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-alternative">
+                    <p>Or send me an email directly:</p>
+                    <a href="mailto:ym2977@nyu.edu" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Email Me Directly
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yash Mathur. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
