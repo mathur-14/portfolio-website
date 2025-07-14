@@ -953,6 +953,69 @@ section {
     color: #1d4ed8;
 }
 
+/* Other Projects Section */
+.other-projects {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e5e7eb;
+}
+
+.other-projects .section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.other-projects .section-subtitle h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.other-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.other-project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.other-project-link:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+.other-project-link i {
+    font-size: 1.2rem;
+    color: #6b7280;
+    transition: color 0.3s ease;
+}
+
+.other-project-link:hover i {
+    color: #2563eb;
+}
+
+.other-project-link span {
+    font-size: 0.95rem;
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
@@ -1205,6 +1268,11 @@ section {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .other-projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
     }
 
     .skills-grid {
