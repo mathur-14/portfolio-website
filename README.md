@@ -13,28 +13,25 @@ A modern, responsive portfolio website showcasing my skills, experience, and pro
 
 ## Contact Form Setup
 
-The contact form uses Formspree for spam protection and email delivery. Follow these steps to set it up:
+The contact form uses Formspree for spam protection and email delivery. The form ID is already configured in the HTML file.
 
-### 1. Get Your Formspree Form ID
+### Current Setup
 
-1. Go to [Formspree.io](https://formspree.io/) and sign up
-2. Create a new form
-3. Copy your form ID (looks like `xrgjqjqj`)
+The form is configured to use Formspree form ID: `mldlrwqy`
 
-### 2. Configure the Form
+### To Change the Form ID
 
-1. Copy `config.template.js` to `config.js`
-2. Replace `your_actual_form_id_here` with your actual Formspree form ID
-3. The `config.js` file is already in `.gitignore` to keep your form ID private
+If you want to use a different Formspree form:
 
-```javascript
-// config.js
-const config = {
-    formspreeFormId: 'your_actual_form_id_here' // Replace with your real form ID
-};
+1. Go to [Formspree.io](https://formspree.io/) and create a new form
+2. Copy your form ID
+3. Update the `action` attribute in the form tag in `index.html`:
+
+```html
+<form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_NEW_FORM_ID" method="POST">
 ```
 
-### 3. Test the Form
+### Test the Form
 
 1. Start your local server: `python3 -m http.server 8000`
 2. Open `http://localhost:8000`
@@ -46,8 +43,6 @@ const config = {
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles
 ├── script.js           # JavaScript functionality
-├── config.js           # Configuration (private - not in git)
-├── config.template.js  # Template for configuration
 ├── .gitignore          # Git ignore rules
 ├── README.md           # This file
 └── profile-pic.jpeg    # Profile picture
@@ -55,7 +50,7 @@ const config = {
 
 ## Security
 
-- ✅ Form ID is kept private and not committed to git
+- ✅ Formspree form IDs are safe to expose in public code
 - ✅ Spam protection via Formspree
 - ✅ Honeypot fields to catch bots
 - ✅ Rate limiting and validation
