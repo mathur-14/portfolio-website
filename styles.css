@@ -89,6 +89,98 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 100px 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Background Keywords */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+}
+
+.animated-keywords {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.keyword-line {
+    position: absolute;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.15);
+    font-weight: 400;
+    opacity: 0.6;
+    animation: moveLeftToRight 20s linear infinite;
+}
+
+.keyword-line:nth-child(even) {
+    animation: moveRightToLeft 25s linear infinite;
+}
+
+.keyword-line:nth-child(3n) {
+    animation: moveLeftToRight 30s linear infinite;
+}
+
+.keyword-line:nth-child(4n) {
+    animation: moveRightToLeft 35s linear infinite;
+}
+
+.keyword-line:nth-child(5n) {
+    animation: moveLeftToRight 40s linear infinite;
+}
+
+.keyword-line:nth-child(6n) {
+    animation: moveRightToLeft 45s linear infinite;
+}
+
+.keyword-line:nth-child(7n) {
+    animation: moveLeftToRight 50s linear infinite;
+}
+
+.keyword-line:nth-child(8n) {
+    animation: moveRightToLeft 55s linear infinite;
+}
+
+.keyword-line:nth-child(9n) {
+    animation: moveLeftToRight 60s linear infinite;
+}
+
+.keyword-line:nth-child(10n) {
+    animation: moveRightToLeft 65s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-container {
