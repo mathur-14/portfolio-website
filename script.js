@@ -61,35 +61,85 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Contact form handling
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const subject = formData.get('subject');
-        const message = formData.get('message');
-        
-        // Basic validation
-        if (!name || !email || !subject || !message) {
-            showNotification('Please fill in all fields', 'error');
-            return;
+// Contact form handling with Formspree
+document.addEventListener('DOMContentLoaded', function() {
+    // Try to load config file
+    let formId = null;
+    
+    // Method 1: Try to load from config.js
+    try {
+        if (typeof config !== 'undefined' && config.formspreeFormId) {
+            formId = config.formspreeFormId;
         }
-        
-        if (!isValidEmail(email)) {
-            showNotification('Please enter a valid email address', 'error');
-            return;
+    } catch (error) {
+        console.log('Config file not loaded');
+    }
+    
+    // Method 2: Check for environment variable (if using a build process)
+    if (!formId && typeof process !== 'undefined' && process.env && process.env.FORMSPREE_FORM_ID) {
+        formId = process.env.FORMSPREE_FORM_ID;
+    }
+    
+    // Method 3: Fallback to a default or show error
+    if (!formId) {
+        console.warn('Formspree form ID not found. Please set up config.js with your form ID.');
+        // You can either disable the form or use a fallback
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.innerHTML = `
+                <div style="text-align: center; padding: 2rem;">
+                    <p>Contact form is being configured. Please email me directly at:</p>
+                    <a href="mailto:ym2977@nyu.edu" class="btn btn-primary">ym2977@nyu.edu</a>
+                </div>
+            `;
         }
+        return;
+    }
+    
+    // Set up the form with the form ID
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.setAttribute('action', `https://formspree.io/f/${formId}`);
         
-        // Simulate form submission
-        showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-        this.reset();
-    });
-}
+        contactForm.addEventListener('submit', function(e) {
+            // Don't prevent default - let Formspree handle the submission
+            
+            // Get form data for validation
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Basic validation
+            if (!name || !email || !subject || !message) {
+                e.preventDefault();
+                showNotification('Please fill in all fields', 'error');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                e.preventDefault();
+                showNotification('Please enter a valid email address', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Formspree will handle the submission and redirect
+            // We'll show success message after a short delay
+            setTimeout(() => {
+                showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+    }
+});
 
 // Email validation function
 function isValidEmail(email) {

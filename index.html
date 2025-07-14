@@ -698,7 +698,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm" method="POST">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
@@ -711,8 +711,16 @@
                     <div class="form-group">
                         <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
+                    <!-- Honeypot field to prevent spam -->
+                    <input type="text" name="_gotcha" style="display:none">
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
+                <div class="contact-alternative">
+                    <p>Or send me an email directly:</p>
+                    <a href="mailto:ym2977@nyu.edu" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Email Me Directly
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -724,6 +732,7 @@
         </div>
     </footer>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
